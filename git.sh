@@ -16,10 +16,11 @@ perform_git_operations() {
     cd "$repo_dir" || return
 
     # Add all changes to the staging area
-    git add .
+    
 
     # Commit the changes with a timestamp
     while true; do
+	git add .
         git commit -m "Automated commit on $(date)" # change msg as needed
         sleep 1min # change 6 with any value
     done
