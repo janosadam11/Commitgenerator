@@ -22,7 +22,7 @@ perform_git_operations() {
     while true; do
 	git add .
         git commit -m "Automated commit on $(date)" # change msg as needed
-        sleep 1min # change 6 with any value
+        sleep 1m # change 6 with any value
     done
 }
 
